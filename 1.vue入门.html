@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="app">
+		  <h1 style="color: red;">{{name1}}</h1>
+		  <h2 style="color: orange;">{{name2}}</h2>
+		  <h3 style="color: yellow;">{{name3}}</h3>
+		</div>
+		
+	</body>
+	<script type="text/javascript">
+		new Vue({
+		el: '#app',
+		data: {
+			name1:'山西',
+			name2:'运城',
+			name3:'临猗',
+		},
+		
+		})
+	</script>
+</html>

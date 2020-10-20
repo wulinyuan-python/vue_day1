@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="app">
+			<h1>{{msg.toLocaleUpperCase()}}</h1>
+			<h2>{{msg1.toLocaleUpperCase()}}</h2>
+			<h2>{{msg2.toLocaleLowerCase()}}</h2>
+		</div>
+		
+	</body>
+	<script type="text/javascript">
+		new Vue({
+		el: '#app',
+		data: {
+			msg : '远赴人间惊鸿宴，一睹人间盛世颜',
+			msg1:'are you ok?',
+			msg2:'ARE YOU OK?',
+		},
+		methods:{
+			
+		}
+		})
+	</script>
+</html>

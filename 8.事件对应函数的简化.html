@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="app">
+			<h1>数字：{{num}}</h1>
+			<input type="button" @click="add" value="增加">
+			<input type="button" @click="dec" value="减少">
+			<input type="button" @click="ping" value="平方">
+			<input type="button" @click="gen" value="开根号">
+			<input type="button" @click="zero" value="归零">
+		</div>
+		
+	</body>
+	<script type="text/javascript">
+		new Vue({
+		el: '#app',
+		data: {
+			num:30,
+		},
+		methods:{
+			add(){
+				this.num++;
+			},
+			dec(){
+				this.num--;
+			},
+			ping(){
+				this.num = this.num**2
+			},
+			gen(){
+				this.num = this.num**0.5
+			},
+			zero(){
+				this.num = 0;
+			}
+		}
+		})
+	</script>
+</html>

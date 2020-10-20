@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="app">
+		  <h1>{{msg}}</h1>
+		  <h2>{{num*2-8/2+1/2}}</h2>
+		  <h3>用户名：{{user.username}}<br>密码：{{user.password}}</h3>
+		  <h3 >{{arr[0]}}--{{arr[1]}}--{{arr[2]}}--{{arr[3]}}--{{arr[4]}}</h3>
+		  <h3>
+		  {{users[0].username}}--{{users[0].age}}——
+		  {{users[1].username}}--{{users[1].age}}——
+		  {{users[2].username}}--{{users[2].age}}
+		  </h3>
+		</div>
+		
+	</body>
+	<script type="text/javascript">
+		new Vue({
+		el: '#app',
+		data: {
+			msg:'我很高兴学习vue！',
+			num : 10,
+			user:{'username':'小明',password:'123123'},
+			arr : ['中国','美国','英国','法国','俄罗斯'],
+			users : [{'username':'薛钰林','age':17},{'username':'王承乾','age':18},{'username':'武林源','age':19},
+			],
+		},
+		methods:{
+			
+		}
+		})
+	</script>
+</html>
